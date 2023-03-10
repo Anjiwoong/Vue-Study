@@ -1,7 +1,7 @@
 const { createStore } = require('vuex');
 
-import productsModule from './modules/products';
-import cartModule from './modules/cart';
+import productsModule from './modules/products/index';
+import cartModule from './modules/cart/index';
 
 const store = createStore({
   modules: {

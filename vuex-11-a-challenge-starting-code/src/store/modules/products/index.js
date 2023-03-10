@@ -1,3 +1,5 @@
+import cartGetters from './getters';
+
 export default {
   namespaced: true,
   state() {
@@ -32,9 +34,5 @@ export default {
       ],
     };
   },
-  getters: {
-    products(state) {
-      return state.products;
-    },
-  },
+  getters: cartGetters,
 };
